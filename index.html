@@ -986,14 +986,14 @@
                   }
                   return false;
                 };
-                if (
-                  ["bmp", "jpg", "png", "svg", "webp", "gif"].contains(suffix)
+                 if (
+                  ["bmp", "jpg", "png", "svg", "webp", "gif","tif","pcx","tga","exif","fpx","psd","cdr","pcd","dxf","ufo","eps","ai","raw","WMF","avif","apng"].contains(suffix)
                 ) {
                   return "image";
-                } else if (["mp3", "flac", "wav"].contains(suffix)) {
+                } else if (["mp3", "flac", "wav","WMA","MP2","MIDI","RA","APE","AAC","CDA","MOV"].contains(suffix)) {
                   return "audio";
                 } else if (
-                  ["mp4", "avi", "mkv", "flv", "m3u8"].contains(suffix)
+                  ["mp4", "avi", "mkv", "flv", "m3u8","wmv","asf","asx","rm","rmvb","3gp","mov","m4v","avi","dat","mkv","flv","vob"].contains(suffix)
                 ) {
                   return "video";
                 } else if (
@@ -1013,7 +1013,7 @@
                     "sh",
                     "py",
                     "go",
-                    "asp",
+                    "asp"
                   ].contains(suffix)
                 ) {
                   return "text";
@@ -1029,6 +1029,7 @@
                     "rtf",
                     "vsd",
                     "vsdx",
+                    "pdf"
                   ].contains(suffix)
                 ) {
                   return "office";
